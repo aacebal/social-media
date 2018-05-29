@@ -1,0 +1,22 @@
+mat-toolbar {
+    position: absolute;
+    top: 0px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.title {
+    padding-left: 40px;
+}
+
+.title a {
+    color: inherit;
+    text-decoration: inherit;
+    padding-top: 10px; 
+}
+
+.example-icon {
+    padding-right: 20px;
+}

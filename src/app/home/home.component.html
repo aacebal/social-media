@@ -1,0 +1,27 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav [mode]="over">
+
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+
+    <mat-nav-list class="example-nav-list">
+      <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <p>
+      <button mat-button (click)="sidenav.toggle()">
+        <mat-icon>arrow_forward_ios</mat-icon>
+      </button>
+    </p>
+    <nav>
+      <app-main-nav></app-main-nav>
+    </nav>
+  </mat-sidenav-content>
+</mat-sidenav-container>
